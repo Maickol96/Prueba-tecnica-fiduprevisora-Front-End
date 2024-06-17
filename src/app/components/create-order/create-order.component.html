@@ -1,0 +1,37 @@
+<div class="order-form">
+  <form [formGroup]="orderForm" (ngSubmit)="submitOrder()">
+
+    <!-- User Selector -->
+    <div formGroupName="user">
+      <select formControlName="id">
+        <option value="" disabled selected>Seleccione un usuario</option>
+        <option *ngFor="let user of users" [value]="user.id">{{ user.username }}</option>
+      </select>
+    </div>
+    <select formControlName="status">
+      <option value="Pendiente">Pendiente</option>
+      <option value="En proceso">En proceso</option>
+      <option value="Completada">Completada</option>
+    </select>
+
+    <!-- Items Array -->
+    <div formArrayName="items">
+      <div *ngFor="let item of items.controls; let i = index" [formGroupName]="i">
+
+        <!-- Product Selector -->
+        <div formGroupName="product">
+          <select formControlName="id">
+            <option value="" disabled selected>Seleccione un producto</option>
+            <option *ngFor="let product of products" [value]="product.id">{{ product.name }}</option>
+          </select>
+        </div>
+
+        <input type="number" formControlName="quantity" min="1" />
+        <button type="button" (click)="removeItem(i)">Eliminar</button>
+      </div>
+    </div>
+
+    <button type="button" (click)="addItem()">Añadir Producto</button>
+    <button type="submit">Enviar Orden</button>
+  </form>
+</div>

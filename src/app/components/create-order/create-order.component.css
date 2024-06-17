@@ -1,0 +1,43 @@
+.order-form form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+}
+.order-form form input, .order-form form select {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.order-form form button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.order-form form button:hover {
+  background-color: #0056b3;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.order-form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+.order-form input[type=number] {
+  width: 60px;
+  margin-right: 10px;
+}
+.order-form button {
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=create-order.component.css.map */

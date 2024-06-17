@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+$tab-background: #e0e0e0;
+$tab-active-background: #009688;
+$tab-hover-background: #cccccc;
+$tab-color: #333;
+$tab-active-color: white;
+$tab-indicator-color: #ff5722;
+
+
+
+.mat-tab-group {
+  .mat-tab-label {
+    background-color: $tab-background;
+    color: $tab-color;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $tab-hover-background;
+    }
+  }
+
+  .mat-tab-label-active {
+    background-color: $tab-active-background;
+    color: $tab-active-color;
+  }
+
+  .mat-ink-bar {
+    background-color: $tab-indicator-color;
+  }
+}

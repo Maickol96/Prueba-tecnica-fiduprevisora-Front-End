@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-tab-group .mat-tab-label {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.mat-tab-group .mat-tab-label:hover {
+  background-color: #cccccc;
+}
+.mat-tab-group .mat-tab-label-active {
+  background-color: #009688;
+  color: white;
+}
+.mat-tab-group .mat-ink-bar {
+  background-color: #ff5722;
+}
+
+/*# sourceMappingURL=styles.css.map */
