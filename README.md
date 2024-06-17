@@ -1,27 +1,51 @@
-# EcommerceFront
+# Ecommerce Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
+## Descripción
 
-## Development server
+_Ecommerce Frontend_ es la interfaz de usuario para la aplicación de comercio electrónico, desarrollada con **Angular 16** y **Angular Material**.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Contenido
 
-## Code scaffolding
+- [Prerrequisitos](#prerrequisitos)
+- [Instalación](#instalación)
+- [Configuración de Angular Material](#configuración-de-angular-material)
+- [Ejecución de la Aplicación](#ejecución-de-la-aplicación)
+- [Estructura del Proyecto](#estructura-del-proyecto)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Prerrequisitos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Antes de compilar y ejecutar la aplicación, asegúrate de tener instalados los siguientes componentes:
 
-## Running unit tests
+- **Node.js** 18.16.1 o superior (incluye npm)
+- **Angular CLI** 16.2.8 o superior
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Instalación
 
-## Running end-to-end tests
+### 1. Instalación de Node.js y npm
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Descarga e instala Node.js desde [nodejs.org](https://nodejs.org/).
 
-## Further help
+1. Visita la [página de descarga de Node.js](https://nodejs.org/en/download).
+2. Selecciona la versión correspondiente a tu sistema operativo y sigue las instrucciones de instalación.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### 2. Instalación de Angular CLI
+
+Instala Angular CLI globalmente utilizando npm:
+
+bash
+npm install -g @angular/cli@16.2.8
+
+### 3. Clonación del Repositorio
+
+git clone https://github.com/Maickol96/Prueba-tecnica-fiduprevisora-Front-End.git
+
+## Instalación de Dependencias
+npm install
+
+## Configuración de Angular Material
+ng add @angular/material
+
+## Ejecución de la Aplicación
+ng serve
+
